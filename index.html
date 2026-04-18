@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Kota Indonesia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Judul -->
+    <h1>Tebak Kota Indonesia</h1>
+    <p>Tebak nama kota dari gambar berikut</p>
+
+    <!-- LEVEL -->
+    <h2 id="levelText">Level 1</h2>
+
+    <!-- NOMOR SOAL -->
+    <p id="nomorSoal">Soal 1</p>
+
+    <!-- NYAWA -->
+    <p id="nyawa">❤️❤️❤️</p>
+
+    <!-- GAMBAR SOAL -->
+    <div class="soal">
+      <id ="gambarSoal" src="" width="300" />
+    </div>
+
+    <!-- INPUT -->
+    <div class="jawaban">
+      <input
+        type="text"
+        id="inputjawaban"
+        placeholder="Ketik jawaban di sini"
+      />
+      <br /><br />
+      <button onclick="cekJawaban()">Cek Jawaban</button>
+    </div>
+
+    <!-- HASIL -->
+    <p id="hasil"></p>
+    <div id="popup" class="popup">
+      <div class="popup-box">
+        <p id="popupText"></p>
+        <button id="btnMainLagi" onclick="mainLagi()">Main Lagi</button>
+      </div>
+    </div>
+
+    <audio id="soundBenar" src="benar.mp3"></audio>
+    <audio id="soundSalah" src="salah.mp3"></audio>
+    <audio id="soundMenang" src="menang.mp3"></audio>
+    <audio id="soundGameover" src="gameover.mp3"></audio>
+    <audio id="soundLevelup" src="levelup.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

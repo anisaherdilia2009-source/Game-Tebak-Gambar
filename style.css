@@ -1,0 +1,204 @@
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  color: navy;
+  margin-bottom: 5px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* LEVEL */
+#levelText {
+  color: #555;
+  margin-top: 10px;
+}
+
+/* NOMOR SOAL */
+#nomorSoal {
+  margin-top: 5px;
+  color: #777;
+}
+
+.soal {
+  margin: 30px auto;
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* NYAWA */
+#nyawa {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+/* GAMBAR */
+.soal img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  width: 260px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* HASIL */
+#hasil {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.benar {
+  color: green;
+}
+
+.salah {
+  color: red;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* awalnya disembunyikan */
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup p {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.popup-box {
+  background: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  text-align: center;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(5px);
+  }
+  75% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+#btnMainLagi {
+  margin-top: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  display: none;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.gameover {
+  animation: zoomOut 0.4s ease;
+  color: red;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.benar {
+  color: #00c853;
+  animation: pop 0.4s ease;
+  display: inline-block;
+}
