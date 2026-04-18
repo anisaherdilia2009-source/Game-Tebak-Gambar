@@ -1,3 +1,5 @@
+alert("TEST BERHASIL");
+
 let level = 0;
 let nomorSoal = 0;
 let nyawa = 3;
