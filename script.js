@@ -63,7 +63,7 @@ function tampilkanSoal() {
   document.getElementById("nyawa").innerText = "❤️".repeat(nyawa);
 
   //   gambar
-  document.getElementById("gambarSoal").src = "images/" + s.gambar;
+  document.getElementById("gambarSoal").src = s.gambar;
 }
 
 function cekJawaban() {
